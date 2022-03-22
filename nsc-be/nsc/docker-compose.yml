@@ -19,7 +19,7 @@ services:
       - dj
   dj_web:
     contaainer_name: dj-web
-    build: -
+    build: .
     command: gunicorn nsc.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120 --log-level=debug
     volumes:
       - /opt/docker-volumes/dj-static:/code/static
