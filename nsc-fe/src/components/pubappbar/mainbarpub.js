@@ -86,13 +86,13 @@ const MainBarPub = () => {
                 }}
               >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='pubhome.js' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
+                    <Button textAlign="center" href='/pubhome' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='pubdetail.js' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
+                    <Button textAlign="center" href='/pubdetail' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='pubcontact.js' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
+                    <Button textAlign="center" href='/pubcontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
                   </MenuItem>
               </Menu>
             </Box>
@@ -109,21 +109,21 @@ const MainBarPub = () => {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='pubhome.js'
+                  href='/pubhome'
                   sx={{ my: 2, display: 'block', color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[0]}
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='pubdetail.js'
+                  href='/pubdetail'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[1]}
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='pubcontact.js'
+                  href='/pubcontact'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[2]}
@@ -152,7 +152,7 @@ const MainBarPub = () => {
                 onClose={handleCloseUserMenu}
               >
                   <MenuItem onClick={handleCloseUserMenu}>
-                    <Button href='login.js' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>เข้าสู่ระบบ</Button>
+                    <Button href='/login' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>เข้าสู่ระบบ</Button>
                   </MenuItem>
               </Menu>
             </Box>

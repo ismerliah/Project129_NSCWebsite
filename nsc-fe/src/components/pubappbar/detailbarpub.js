@@ -85,13 +85,13 @@ const DetailBarPub = () => {
                 }}
               >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/pubhome' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
+                    <Button textAlign="center" href='/pubhome' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/pubdetail' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
+                    <Button textAlign="center" href='/pubdetail' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/pubcontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
+                    <Button textAlign="center" href='/pubcontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
                   </MenuItem>
               </Menu>
             </Box>
@@ -108,21 +108,21 @@ const DetailBarPub = () => {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/pubhome'
+                  href='/pubhome'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[0]}
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/pubdetail'
+                  href='/pubdetail'
                   sx={{ my: 2, display: 'block', color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[1]}
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/pubcontact'
+                  href='/pubcontact'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[2]}
@@ -151,7 +151,7 @@ const DetailBarPub = () => {
                 onClose={handleCloseUserMenu}
               >
                   <MenuItem onClick={handleCloseUserMenu}>
-                    <Button href='http://localhost:3000/login' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>เข้าสู่ระบบ</Button>
+                    <Button href='/login' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>เข้าสู่ระบบ</Button>
                   </MenuItem>
               </Menu>
             </Box>

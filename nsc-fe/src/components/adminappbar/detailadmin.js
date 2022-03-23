@@ -92,13 +92,13 @@ const AdminDetailBar = () => {
                 }}
               >
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/adminhome' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
+                    <Button textAlign="center" href='/adminhome' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/admindetail' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
+                    <Button textAlign="center" href='/admindetail' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/admincontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
+                    <Button textAlign="center" href='/admincontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
                   </MenuItem>
               </Menu>
             </Box>
@@ -115,21 +115,21 @@ const AdminDetailBar = () => {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/adminhome'
+                  href='/adminhome'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[0]}
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/admindetail'
+                  href='/admindetail'
                   sx={{ my: 2, display: 'block', color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[1]}
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/admincontact'
+                  href='/admincontact'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[2]}
@@ -163,10 +163,10 @@ const AdminDetailBar = () => {
                 onClose={handleCloseUserMenu}
               >
                   <MenuItem onClick={handleCloseUserMenu}>
-                    <Button href='http://localhost:3000/adminannounce' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>ประกาศ</Button>
+                    <Button href='/adminannounce' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>ประกาศ</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseUserMenu}>
-                    <Button href='http://localhost:3000/adminlistproject' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{settings[0]}</Button>
+                    <Button href='/adminlistproject' textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{settings[0]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleLogout}>
                     <Button textAlign="center" sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{settings[1]}</Button>
