@@ -17,7 +17,7 @@ export default function AdminAnnounceContent() {
 
   const [adminuploads1, setAdminuploads1] = useState([])
   const getAdminuploads1 = async () => {
-    const response = await axios.get('http://localhost:8000/api/adminupload1/')
+    const response = await axios.get('/api/adminupload1/')
     setAdminuploads1(response.data)
   }
 
@@ -37,7 +37,7 @@ export default function AdminAnnounceContent() {
 
     await axios({
       method: 'post',
-      url: 'http://localhost:8000/api/adminupload1/',
+      url: '/api/adminupload1/',
       data: fromField
     }).then((response) => {
       // console.log(response.data);
@@ -48,7 +48,7 @@ export default function AdminAnnounceContent() {
   const [filecontent2, setFilecontent2] = useState(null)
   const [adminupload2, setAdminupload2] = useState([])
   const getAdminupload2 = async () => {
-    const response = await axios.get('http://localhost:8000/api/adminupload2/')
+    const response = await axios.get('/api/adminupload2/')
     setAdminupload2(response.data)
   }
 
@@ -66,7 +66,7 @@ export default function AdminAnnounceContent() {
 
     await axios({
       method: 'post',
-      url: 'http://localhost:8000/api/adminupload2/',
+      url: '/api/adminupload2/',
       data: fromField
     }).then((response) => {
       // console.log(response.data);

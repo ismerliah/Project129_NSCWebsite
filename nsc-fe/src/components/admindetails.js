@@ -27,7 +27,7 @@ function AdminContent() {
   const [member3, setMember3] = useState("")
 
   const loadUserdetail = async () => {
-    const { data } = await axios.get(`http://localhost:8000/api/userdetail/${id}/`)
+    const { data } = await axios.get(`/api/userdetail/${id}/`)
     // console.log(data)
     setProjectID(data.projectID)
     setProject(data.project)
@@ -58,7 +58,7 @@ function AdminContent() {
   
   await axios({
     method: 'PUT',
-    url: `http://localhost:8000/api/userdetail/${id}/`,
+    url: `/api/userdetail/${id}/`,
     data: fromField
   }).then(response => {
     // console.log(response.data)
@@ -78,18 +78,13 @@ function AdminContent() {
 
     await axios({
       method: 'PUT',
-      url: `http://localhost:8000/api/certificate/${id}/`,
+      url: `/api/certificate/${id}/`,
       data: fromField
     }).then((response) => {
       // console.log(response.data);
       navigate(`/adminprojectdetail/${id}/`)
     })
   }
-  // Delete CerAj
-  // const deletecertificateAj = async (certificateAj) => {
-  //   await axios.delete(`http://localhost:8000/api/certificate/${id}/`)
-  //   navigate.push('/')
-  // }
 
   // AddCerMem1
   const [certificateMem1, setCertificateMem1] = useState(null)
@@ -102,7 +97,7 @@ function AdminContent() {
 
     await axios({
       method: 'PUT',
-      url: `http://localhost:8000/api/certificate/${id}/`,
+      url: `/api/certificate/${id}/`,
       data: fromField
     }).then((response) => {
       // console.log(response.data);
@@ -120,7 +115,7 @@ function AdminContent() {
 
     await axios({
       method: 'PUT',
-      url: `http://localhost:8000/api/certificate/${id}/`,
+      url: `/api/certificate/${id}/`,
       data: fromField
     }).then((response) => {
       // console.log(response.data);
@@ -138,7 +133,7 @@ function AdminContent() {
 
     await axios({
       method: 'PUT',
-      url: `http://localhost:8000/api/certificate/${id}/`,
+      url: `/api/certificate/${id}/`,
       data: fromField
     }).then((response) => {
       // console.log(response.data);
@@ -154,7 +149,7 @@ function AdminContent() {
   const [ namecermem2, setNamecermem2 ] = useState()
   const [ namecermem3, setNamecermem3 ] = useState()
   const getCertificate = async () => {
-    const { data } = await axios.get(`http://localhost:8000/api/certificate/${id}/`)
+    const { data } = await axios.get(`/api/certificate/${id}/`)
     // console.log(data)
     setCertificate(data)
 

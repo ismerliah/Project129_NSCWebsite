@@ -13,7 +13,7 @@ function UserContent() {
   const { id } = useParams();
 
   const getUserdetail = async () => {
-    const { data } = await axios.get(`http://localhost:8000/api/userdetail/${id}`)
+    const { data } = await axios.get(`/api/userdetail/${id}`)
     // console.log(data)
     setUserdetail(data)
 
@@ -36,7 +36,7 @@ function UserContent() {
 
   const [certificate, setCertificate] = useState([])
   const getCertificate = async () => {
-    const { data } = await axios.get(`http://localhost:8000/api/certificate/${id}/`)
+    const { data } = await axios.get(`/api/certificate/${id}/`)
     // console.log(data)
     setCertificate(data)
     // console.log(data)
