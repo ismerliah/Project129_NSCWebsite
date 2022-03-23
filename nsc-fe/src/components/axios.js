@@ -1,6 +1,7 @@
 import axios from 'axios';
+import config from '../config';
 
-const baseURL = '/api/';
+const baseURL = `${config.apiUrlPrefix}/`;
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,

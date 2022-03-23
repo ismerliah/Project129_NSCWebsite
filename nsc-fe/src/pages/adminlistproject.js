@@ -3,6 +3,7 @@ import { Box, Link } from '@mui/material';
 import AdminMainBar from '../components/adminappbar/mainadmin';
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
+import config from '../config';
 
 const columns = [
   { field: 'order',
@@ -54,7 +55,7 @@ function DataGridDemo() {
   React.useEffect( async() => {
     // const accesstoken = await axios.post('/api/token/', posttoken);
     // console.log(accesstoken.data.access)
-    const projectdetail = await axios.get('/api/userdetail/'); 
+    const projectdetail = await axios.get(`${config.apiUrlPrefix}/userdetail/`); 
     //   headers: {
     //     'Authorization': `Bearer ${accesstoken.data.access}`
     //   }

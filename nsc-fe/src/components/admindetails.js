@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
+import config from '../config';
 
 
 function AdminContent() {
@@ -27,7 +28,7 @@ function AdminContent() {
   const [member3, setMember3] = useState("")
 
   const loadUserdetail = async () => {
-    const { data } = await axios.get(`/api/userdetail/${id}/`)
+    const { data } = await axios.get(`${config.apiUrlPrefix}/userdetail/${id}/`)
     // console.log(data)
     setProjectID(data.projectID)
     setProject(data.project)

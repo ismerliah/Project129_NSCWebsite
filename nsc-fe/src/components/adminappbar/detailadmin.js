@@ -36,16 +36,6 @@ const AdminDetailBar = () => {
     setAnchorElUser(null);
   };
 
-  useEffect(() => {
-    const token = localStorage.getItem('token')
-    fetch('http://localhost:3333/authen', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer'+token
-    },
-})
-}, [])
 
   const handleLogout = (event) => {
     event.preventDefault();

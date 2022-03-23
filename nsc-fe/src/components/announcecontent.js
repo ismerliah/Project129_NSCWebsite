@@ -5,12 +5,13 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
+import config from '../config';
 
 export default function AnnounceContent() {
 
   const [adminuploads1, setAdminuploads1] = useState([])
   const getAdminuploads1 = async () => {
-    const response = await axios.get('/api/adminupload1/')
+    const response = await axios.get(`${config.apiUrlPrefix}/adminupload1/`)
     setAdminuploads1(response.data)
     // console.log(adminuploads1)
     // console.log(response.data)
@@ -22,7 +23,7 @@ export default function AnnounceContent() {
 
   const [adminupload2, setAdminupload2] = useState([])
   const getAdminupload2 = async () => {
-    const response = await axios.get('/api/adminupload2/')
+    const response = await axios.get(`${config.apiUrlPrefix}/adminupload2/`)
     setAdminupload2(response.data)
     // console.log(response.data)
   }

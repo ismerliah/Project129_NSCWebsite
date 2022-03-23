@@ -6,6 +6,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import { useParams } from 'react-router-dom';
+import config from '../config';
 
 function UserContent() {
   const [userdetail, setUserdetail] = useState("");
@@ -13,7 +14,7 @@ function UserContent() {
   const { id } = useParams();
 
   const getUserdetail = async () => {
-    const { data } = await axios.get(`/api/userdetail/${id}`)
+    const { data } = await axios.get(`${config.apiUrlPrefix}/userdetail/${id}`)
     // console.log(data)
     setUserdetail(data)
 
@@ -36,7 +37,7 @@ function UserContent() {
 
   const [certificate, setCertificate] = useState([])
   const getCertificate = async () => {
-    const { data } = await axios.get(`/api/certificate/${id}/`)
+    const { data } = await axios.get(`${config.apiUrlPrefix}/certificate/${id}/`)
     // console.log(data)
     setCertificate(data)
     // console.log(data)
