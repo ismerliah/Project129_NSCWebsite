@@ -102,7 +102,7 @@ const localid = localStorage.getItem('id');
                     <Button textAlign="center" href='http://localhost:3000/userhome' sx={{ color: '#004aad', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[0]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='http://localhost:3000/userdetail' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
+                    <Button textAlign="center" href='https://wd0304.coe.psu.ac.th/userdetail' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
                     <Button textAlign="center" href='http://localhost:3000/usercontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
@@ -129,7 +129,7 @@ const localid = localStorage.getItem('id');
                 </Button>
                 <Button
                   onClick={handleCloseNavMenu}
-                  href='http://localhost:3000/userdetail'
+                  href='https://wd0304.coe.psu.ac.th/userdetail'
                   sx={{ my: 2, display: 'block', color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 18 }}
                 >
                   {pages[1]}
