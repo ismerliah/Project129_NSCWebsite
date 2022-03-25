@@ -86,6 +86,7 @@ class Certificate(models.Model) :
 
 class Userdetail(models.Model) :
     name = 'test'
+    projectID = models.CharField(max_length=200, null=True, blank=True, default='')
 
     def __str__(self) :
         return self.name
