@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { Container, Link } from '@mui/material';
+import { Box, Container, Link } from '@mui/material';
 import AdminContent from '../components/admindetails';
 import AdminMainBar from '../components/adminappbar/mainadmin';
+import MainBar from '../components/appbar/mainbar';
 
 
 function AdminProjectDetail() {
   return (
-    <div>
+    <Box>
       <div className='topbanner'>
         <div style={{ 
             fontFamily: 'Sarabun', 
@@ -24,13 +25,13 @@ function AdminProjectDetail() {
       <br/>
       <br/>
       <Container className='fBannerFix'>
-      <center>
-      <div className='f6' style={{ fontSize: 50, color: '#0000CC' }}>รายละเอียดโครงการ</div>
-      </center>
-      <AdminContent/>
-      <br/>
-      </Container>
-    </div>
+        <center>
+        <div className='f6' style={{ fontSize: 50, color: '#0000CC' }}>รายละเอียดโครงการ</div>
+        </center>
+        <AdminContent/>
+        <br/>
+        </Container>
+    </Box>
     )
 }
 export default AdminProjectDetail;

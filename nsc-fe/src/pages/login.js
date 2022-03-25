@@ -76,7 +76,7 @@ function Login() {
           'JWT ' + localStorage.getItem('access_token');
         
         if (res.data.is_admin == Boolean("True")) {
-          navigate('/adminhome');
+          navigate('/superhome');
           alert('Login Success!')
         }
         else if (res.data.is_member == Boolean("True")) {
@@ -84,11 +84,11 @@ function Login() {
           alert('Login Success!')
         }
         else if (res.data.is_staff == Boolean("True")) {
-          navigate('/adminhome');
+          navigate('/superhome');
           alert('Login Success!')
         }
-        // console.log(formData)
-        // console.log(res.data)
+        console.log(formData)
+        console.log(res.data)
         
         // console.log('is_member:', res.data.is_member)
         // console.log('is_staff:', res.data.is_staff)

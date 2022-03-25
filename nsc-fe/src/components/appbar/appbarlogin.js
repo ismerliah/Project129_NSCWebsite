@@ -90,7 +90,7 @@ const Appbarlogin = () => {
                     <Button textAlign="center" href='/pubdetail' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[1]}</Button>
                   </MenuItem>
                   <MenuItem onClick={handleCloseNavMenu}>
-                    <Button textAlign="center" href='/pubcontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[3]}</Button>
+                    <Button textAlign="center" href='/pubcontact' sx={{ color: 'black', fontFamily: 'Noto Sans Thai', fontSize: 17}}>{pages[2]}</Button>
                   </MenuItem>
               </Menu>
             </Box>

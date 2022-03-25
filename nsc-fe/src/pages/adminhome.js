@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import AdminMainBar from '../components/adminappbar/mainadmin';
+import MainBar from '../components/appbar/mainbar';
 import ScheduleTable from '../components/scheduletable';
 
 function AdminHome() {

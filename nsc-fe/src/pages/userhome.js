@@ -19,8 +19,6 @@ function UserHome() {
       </div>
       <MainBar/>
       <br/>
-      <div>
-      </div>
       <br/>
       <br/>
       <center>

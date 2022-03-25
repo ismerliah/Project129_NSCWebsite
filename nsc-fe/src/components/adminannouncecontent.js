@@ -42,7 +42,7 @@ export default function AdminAnnounceContent() {
       data: fromField
     }).then((response) => {
       // console.log(response.data);
-      navigate('/adminannounce')
+      navigate('/superannounce')
     })
   }
 
@@ -71,7 +71,7 @@ export default function AdminAnnounceContent() {
       data: fromField
     }).then((response) => {
       // console.log(response.data);
-      navigate('/adminannounce')
+      navigate('/superannounce')
     })
   }
 

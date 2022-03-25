@@ -3,6 +3,7 @@ import ActionAreaCard from '../components/card';
 import BasicTable from '../components/detailstable';
 import '../App.css';
 import AdminDetailBar from '../components/adminappbar/detailadmin';
+import MainBar from '../components/appbar/mainbar';
 
 function AdminDetail() {
   return (

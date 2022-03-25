@@ -1,6 +1,7 @@
 import { Box, Container } from '@mui/material';
 import AnnounceadminBar from '../components/adminappbar/announceadmin';
 import AdminAnnounceContent from '../components/adminannouncecontent';
+import MainBar from '../components/appbar/mainbar';
 
 function AdminAnnounce() {
   return (

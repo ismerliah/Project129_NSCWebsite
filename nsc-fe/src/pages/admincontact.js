@@ -6,6 +6,7 @@ import mailAj_sek from '../images/mailAj_sek.png';
 import logofb from '../images/logofb.png';
 import Link from '@mui/material/Link';
 import CardContent from '@mui/material/CardContent';
+import MainBar from '../components/appbar/mainbar';
 
 function AdminContact() {
   const preventDefault = (event) => event.preventDefault();

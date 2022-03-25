@@ -4,6 +4,7 @@ import AdminMainBar from '../components/adminappbar/mainadmin';
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
 import config from '../config';
+import MainBar from '../components/appbar/mainbar';
 
 const columns = [
   { field: 'order',
@@ -17,7 +18,7 @@ const columns = [
     headerName: 'รหัสโครงการ',
     width: 150,
     renderCell: (cellValues) => {
-      return <Link href={`adminprojectdetail/${cellValues.row.order+1}/`} color='inherit' underline='none' fontWeight='bold'>
+      return <Link href={`superprojectdetail/${cellValues.row.order+1}/`} color='inherit' underline='none' fontWeight='bold'>
                 {`${cellValues.row.id}`}
               </Link>;
     }

@@ -63,7 +63,7 @@ function AdminContent() {
     data: fromField
   }).then(response => {
     // console.log(response.data)
-    navigate(`/adminprojectdetail/${id}/`)
+    navigate(`/superprojectdetail/${id}/`)
     alert('edited successfully')
   })
 }
@@ -83,7 +83,7 @@ function AdminContent() {
       data: fromField
     }).then((response) => {
       // console.log(response.data);
-      navigate(`/adminprojectdetail/${id}/`)
+      navigate(`/superprojectdetail/${id}/`)
     })
   }
 
@@ -102,7 +102,7 @@ function AdminContent() {
       data: fromField
     }).then((response) => {
       // console.log(response.data);
-      navigate(`/adminprojectdetail/${id}/`)
+      navigate(`/superprojectdetail/${id}/`)
     })
   }
   // AddCerMem2
@@ -120,7 +120,7 @@ function AdminContent() {
       data: fromField
     }).then((response) => {
       // console.log(response.data);
-      navigate(`/adminprojectdetail/${id}/`)
+      navigate(`/superprojectdetail/${id}/`)
     })
   }
   // AddCerMem3
@@ -138,7 +138,7 @@ function AdminContent() {
       data: fromField
     }).then((response) => {
       // console.log(response.data);
-      navigate(`/adminprojectdetail/${id}/`)
+      navigate(`/superprojectdetail/${id}/`)
     })
   }
 

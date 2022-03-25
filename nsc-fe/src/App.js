@@ -30,12 +30,12 @@ function App() {
         <Route path="/usercontent/:id/" element={<UserProjectDetail/>}/>
         <Route path="/userannounce" element={<UserAnnounce/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/adminhome" element={<AdminHome/>}/>
-        <Route path="/admindetail" element={<AdminDetail/>}/>
-        <Route path="/admincontact" element={<AdminContact/>}/>
-        <Route path="/adminannounce" element={<AdminAnnounce/>}/>
-        <Route path="/adminlistproject" element={<AdminListproject/>}/>
-        <Route path="/adminprojectdetail/:id/" element={<AdminProjectDetail/>}/>
+        <Route path="/superhome" element={<AdminHome/>}/>
+        <Route path="/superdetail" element={<AdminDetail/>}/>
+        <Route path="/supercontact" element={<AdminContact/>}/>
+        <Route path="/superannounce" element={<AdminAnnounce/>}/>
+        <Route path="/superlistproject" element={<AdminListproject/>}/>
+        <Route path="/superprojectdetail/:id/" element={<AdminProjectDetail/>}/>
       </Routes>
     </BrowserRouter>
   );
