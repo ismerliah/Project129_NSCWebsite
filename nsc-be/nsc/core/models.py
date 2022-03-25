@@ -71,7 +71,8 @@ class Adminupload2(models.Model) :
     def __str__(self) :
         return self.name
 
-class Userdetail(models.Model) :
+
+class NewUserdetail(models.Model) :
 
     CATEGORY_CHOICE = (
         ('โปรแกรมเพื่อการศึกษาและส่งเสริมการเรียนรู้', 'โปรแกรมเพื่อการศึกษาและส่งเสริมการเรียนรู้'),
