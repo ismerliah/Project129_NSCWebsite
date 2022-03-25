@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Adminupload1, Adminupload2, Certificate, NewUser
-from .serializers import CertificateSerializer, NewUserSerializer, Adminupload1Serializer, Adminupload2Serializer
+from .models import Adminupload1, Adminupload2, Certificate, NewUser, Userdetail
+from .serializers import CertificateSerializer, NewUserSerializer, Adminupload1Serializer, Adminupload2Serializer, UserdetailSerializer
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
@@ -43,9 +43,9 @@ class NewUserViewset(viewsets.ModelViewSet) :
     serializer_class = NewUserSerializer
     queryset = NewUser.objects.all()
 
-# class UserdetailViewset(viewsets.ModelViewSet) :
-#     serializer_class = UserdetailSerializer
-#     queryset = Userdetail.objects.all()
+class UserdetailViewset(viewsets.ModelViewSet) :
+    serializer_class = UserdetailSerializer
+    queryset = Userdetail.objects.all()
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
