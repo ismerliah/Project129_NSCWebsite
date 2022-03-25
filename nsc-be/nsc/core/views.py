@@ -68,4 +68,4 @@ class CertificateViewset(viewsets.ModelViewSet) :
 
 class DEtailViewset(viewsets.ModelViewSet) :
     serializer_class = DetailSerializer
-    queryset = Detail.object.all()
+    queryset = Detail.objects.all()
