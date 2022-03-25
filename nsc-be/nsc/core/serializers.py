@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Adminupload1, Adminupload2, Certificate, NewUser
+from .models import Adminupload1, Adminupload2, Certificate, NewUser, Projectdetail
 
 class CustomUserSerializer(serializers.ModelSerializer):
     """ 
@@ -43,4 +43,9 @@ class Adminupload2Serializer(serializers.ModelSerializer) :
 class CertificateSerializer(serializers.ModelSerializer) :
     class Meta :
         model = Certificate
+        fields = '__all__'
+
+class ProjectdetailSerializer(serializers.ModelSerializer) :
+    class Meta :
+        model = Projectdetail
         fields = '__all__'
