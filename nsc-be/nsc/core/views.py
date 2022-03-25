@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Adminupload1, Adminupload2, Certificate, Detail, NewUser
-from .serializers import CertificateSerializer, DetailSerializer, NewUserSerializer, Adminupload1Serializer, Adminupload2Serializer, UserdetailSerializer
+from .serializers import CertificateSerializer, DetailSerializer, NewUserSerializer, Adminupload1Serializer, Adminupload2Serializer
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
