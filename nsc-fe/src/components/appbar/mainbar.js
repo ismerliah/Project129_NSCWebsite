@@ -48,6 +48,7 @@ const handleLogout = (event) => {
 }
 
 const localid = localStorage.getItem('id');
+const localusername = localStorage.getItem('username');
 
 
   return (
@@ -147,7 +148,7 @@ const localid = localStorage.getItem('id');
               <Tooltip title="">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Typography variant="body2" align='center' sx={{ color:'#0000CC', fontSize: 20, fontFamily: 'Noto Sans Thai' }}>
-                      user
+                    {localusername}
                   </Typography>
                   &nbsp;
                   <AccountCircle fontSize='large' color='primary'/>

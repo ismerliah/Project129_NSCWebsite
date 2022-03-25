@@ -35,6 +35,7 @@ class CustomAccountManager(BaseUserManager):
 class NewUser(AbstractBaseUser, PermissionsMixin):
 
     username = models.CharField(max_length=150, blank=False,  unique=True)
+    projectID = models.CharField(max_length=200, null=True, blank=True, default='')
 
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
