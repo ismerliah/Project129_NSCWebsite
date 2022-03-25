@@ -83,3 +83,32 @@ class Certificate(models.Model) :
 
     def __str__(self) :
         return f'{self.name} | {self.projectID}'
+
+class Detail(models.Model) :
+
+    CATEGORY_CHOICE = (
+        ('โปรแกรมเพื่อการศึกษาและส่งเสริมการเรียนรู้', 'โปรแกรมเพื่อการศึกษาและส่งเสริมการเรียนรู้'),
+        ('โปรแกรมเพื่อบริหารการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม', 'โปรแกรมเพื่อบริหารการเปลี่ยนแปลงสภาพภูมิอากาศและสิ่งแวดล้อม'),
+        ('โปรแกรมเพื่อช่วยคนพิการและผู้สูงอายุ', 'โปรแกรมเพื่อช่วยคนพิการและผู้สูงอายุ'),
+        ('โปรแกรมเพื่อใช้ภายใต้สถานการณ์โควิด-19และโรคติดเชื้ออุบัติใหม่', 'โปรแกรมเพื่อใช้ภายใต้สถานการณ์โควิด-19และโรคติดเชื้ออุบัติใหม่'),
+    )
+    LEVEL_CHOICE = (
+        ('นิสิต นักศึกษา', 'นิสิต นักศึกษา'),
+        ('นักเรียน', 'นักเรียน'),
+    )
+
+    username = models.OneToOneField(NewUser, on_delete=models.CASCADE, blank=True, null=True, unique=True)
+    fakeID = models.IntegerField()
+    projectID = models.CharField(max_length=200, null=False, blank=False, default='')
+    project = models.CharField(max_length=200)
+    category = models.CharField(max_length=512, choices=CATEGORY_CHOICE)
+    level = models.CharField(max_length=512, choices=LEVEL_CHOICE, default='')
+    institution = models.CharField(max_length=200)
+    advisor = models.CharField(max_length=200)
+    member1 = models.CharField(max_length=200)
+    member2 = models.CharField(max_length=200, null=True, blank=True)
+    member3 = models.CharField(max_length=200, null=True, blank=True)
+
+
+    def __str__(self) :
+        return self.project
