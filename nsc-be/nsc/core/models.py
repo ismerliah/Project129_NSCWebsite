@@ -72,7 +72,7 @@ class Adminupload2(models.Model) :
         return self.name
 
 
-class Userdetail1(models.Model) :
+class Userdetail(models.Model) :
 
     CATEGORY_CHOICE = (
         ('โปรแกรมเพื่อการศึกษาและส่งเสริมการเรียนรู้', 'โปรแกรมเพื่อการศึกษาและส่งเสริมการเรียนรู้'),
