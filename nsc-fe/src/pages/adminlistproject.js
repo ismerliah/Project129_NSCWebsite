@@ -56,7 +56,7 @@ function DataGridDemo() {
   React.useEffect( async() => {
     // const accesstoken = await axios.post('/api/token/', posttoken);
     // console.log(accesstoken.data.access)
-    const projectdetail = await axios.get(`${config.apiUrlPrefix}/userdetail/`); 
+    const projectdetail = await axios.get(`${config.apiUrlPrefix}/detail/`); 
     //   headers: {
     //     'Authorization': `Bearer ${accesstoken.data.access}`
     //   }

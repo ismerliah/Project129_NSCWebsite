@@ -84,13 +84,6 @@ class Certificate(models.Model) :
     def __str__(self) :
         return f'{self.name} | {self.projectID}'
 
-class Userdetail(models.Model) :
-    name = 'test'
-    projectID = models.CharField(max_length=200, null=True, blank=True, default='')
-
-    def __str__(self) :
-        return self.name
-
 class Detail(models.Model) :
 
     CATEGORY_CHOICE = (

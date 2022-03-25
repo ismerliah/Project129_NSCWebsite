@@ -27,8 +27,8 @@ function AdminContent() {
   const [member2, setMember2] = useState("")
   const [member3, setMember3] = useState("")
 
-  const loadUserdetail = async () => {
-    const { data } = await axios.get(`${config.apiUrlPrefix}/userdetail/${id}/`)
+  const loadDetail = async () => {
+    const { data } = await axios.get(`${config.apiUrlPrefix}/detail/${id}/`)
     // console.log(data)
     setProjectID(data.projectID)
     setProject(data.project)
@@ -42,12 +42,12 @@ function AdminContent() {
   }
 
   useEffect(() => {
-    loadUserdetail()
+    loadDetail()
   },[])
 
   //Update Userdetail
 
-  const UpdateUserdetail = async () => {
+  const UpdateDetail = async () => {
     let fromField = new FormData()
     fromField.append('projectID', projectID)
     fromField.append('project', project)
@@ -59,7 +59,7 @@ function AdminContent() {
   
   await axios({
     method: 'PUT',
-    url: `/api/userdetail/${id}/`,
+    url: `/api/detail/${id}/`,
     data: fromField
   }).then(response => {
     // console.log(response.data)
@@ -304,7 +304,7 @@ useEffect(() => {
             </div>
           </div>
           <br/>
-          <Button color="success" variant="contained" component="span" size="small" style={{ float: 'right'}} onClick={UpdateUserdetail}>Submit</Button>
+          <Button color="success" variant="contained" component="span" size="small" style={{ float: 'right'}} onClick={UpdateDetail}>Submit</Button>
             </Typography>
           </AccordionDetails>
           <br/>

@@ -9,19 +9,19 @@ import { useParams } from 'react-router-dom';
 import config from '../config';
 
 function UserContent() {
-  const [userdetail, setUserdetail] = useState("");
+  const [detail, setDetail] = useState("");
 
   const { id } = useParams();
 
-  const getUserdetail = async () => {
-    const { data } = await axios.get(`${config.apiUrlPrefix}/userdetail/${id}`)
+  const getDetail = async () => {
+    const { data } = await axios.get(`${config.apiUrlPrefix}/detail/${id}`)
     // console.log(data)
-    setUserdetail(data)
+    setDetail(data)
 
   }
 
   useEffect(() => {
-    getUserdetail();
+    getDetail();
   }, [])
 
   function getcer(data) {
@@ -151,16 +151,16 @@ function UserContent() {
       </AccordionSummary>
       <AccordionDetails>
               <Typography sx={{color:'#000000', fontSize: 18, fontFamily: 'Noto Sans Thai' }}>
-                รหัสโครงการ: {userdetail.projectID} <br/>
-                โครงการ: {userdetail.project} <br/>
-                หมวดโครงการ: {userdetail.category} <br/>
-                ระดับ: {userdetail.level} <br/>
-                สถาบัน: {userdetail.institution} <br/>
+                รหัสโครงการ: {detail.projectID} <br/>
+                โครงการ: {detail.project} <br/>
+                หมวดโครงการ: {detail.category} <br/>
+                ระดับ: {detail.level} <br/>
+                สถาบัน: {detail.institution} <br/>
                 สมาชิก: <br/>
-                  &emsp; {userdetail.member1} <br/>
-                  &emsp; {userdetail.member2} <br/>
-                  &emsp; {userdetail.member3} <br/>
-                อาจารย์ที่ปรึกษา: {userdetail.advisor} <br/>
+                  &emsp; {detail.member1} <br/>
+                  &emsp; {detail.member2} <br/>
+                  &emsp; {detail.member3} <br/>
+                อาจารย์ที่ปรึกษา: {detail.advisor} <br/>
               </Typography>
       </AccordionDetails>
     </Accordion>
@@ -193,16 +193,16 @@ function UserContent() {
             </AccordionSummary>
             <AccordionDetails>
                     <Typography sx={{color:'#000000', fontSize: 18, fontFamily: 'Noto Sans Thai' }}>
-                      รหัสโครงการ: {userdetail.projectID} <br/>
-                      โครงการ: {userdetail.project} <br/>
-                      หมวดโครงการ: {userdetail.category} <br/>
-                      ระดับ: {userdetail.level} <br/>
-                      สถาบัน: {userdetail.institution} <br/>
+                      รหัสโครงการ: {detail.projectID} <br/>
+                      โครงการ: {detail.project} <br/>
+                      หมวดโครงการ: {detail.category} <br/>
+                      ระดับ: {detail.level} <br/>
+                      สถาบัน: {detail.institution} <br/>
                       สมาชิก: <br/>
-                        &emsp; {userdetail.member1} <br/>
-                        &emsp; {userdetail.member2} <br/>
-                        &emsp; {userdetail.member3} <br/>
-                      อาจารย์ที่ปรึกษา: {userdetail.advisor} <br/>
+                        &emsp; {detail.member1} <br/>
+                        &emsp; {detail.member2} <br/>
+                        &emsp; {detail.member3} <br/>
+                      อาจารย์ที่ปรึกษา: {detail.advisor} <br/>
                     </Typography>
             </AccordionDetails>
           </Accordion>
