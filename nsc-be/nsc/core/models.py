@@ -98,7 +98,6 @@ class Detail(models.Model) :
     )
 
     username = models.OneToOneField(NewUser, on_delete=models.CASCADE, blank=True, null=True, unique=True)
-    fakeID = models.IntegerField()
     projectID = models.CharField(max_length=200, null=False, blank=False, default='')
     project = models.CharField(max_length=200)
     category = models.CharField(max_length=512, choices=CATEGORY_CHOICE)
