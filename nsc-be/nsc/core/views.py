@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Adminupload1, Adminupload2, Certificate, Detail, NewUser
-from .serializers import CertificateSerializer, DetailSerializer, NewUserSerializer, Adminupload1Serializer, Adminupload2Serializer
+from .models import Adminupload1, Adminupload2, Certificate, Detail, NewUser, Userdetail
+from .serializers import CertificateSerializer, DetailSerializer, NewUserSerializer, Adminupload1Serializer, Adminupload2Serializer, UserdetailSerializer
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
@@ -66,6 +66,10 @@ class CertificateViewset(viewsets.ModelViewSet) :
     serializer_class = CertificateSerializer
     queryset = Certificate.objects.all()
 
-class DEtailViewset(viewsets.ModelViewSet) :
+class DetailViewset(viewsets.ModelViewSet) :
     serializer_class = DetailSerializer
     queryset = Detail.objects.all()
+
+class UserdetailViewset(viewsets.ModelViewSet) :
+    serializer_class = UserdetailSerializer
+    queryset = Userdetail.objects.all()

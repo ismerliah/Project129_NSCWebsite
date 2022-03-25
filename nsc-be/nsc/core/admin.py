@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.forms import TextInput, Textarea, CharField
 from django import forms
 from django.db import models
-from .models import Certificate, Detail, NewUser, Adminupload1, Adminupload2
+from .models import Certificate, Detail, NewUser, Adminupload1, Adminupload2, Userdetail
 from django.contrib.auth.models import Group
 
 class UserAdminConfig(UserAdmin):
@@ -39,6 +39,7 @@ admin.site.register(Certificate)
 admin.site.register(Adminupload1)
 admin.site.register(Adminupload2)
 admin.site.register(Detail)
+admin.site.register(Userdetail)
 
 
 # admin.site.unregister(Group)
