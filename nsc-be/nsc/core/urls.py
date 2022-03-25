@@ -11,7 +11,7 @@ router.register(r"adminupload1", Adminupload1Viewset, basename='adminview1')
 router.register(r"adminupload2", Adminupload2Viewset, basename='adminview2')
 router.register(r"newuser", NewUserViewset, basename='newuser')
 router.register(r"userdetail", UserdetailViewset, basename='userdetail')
-router.register(r"userdetail", UserprojectdetailViewset, basename='userprojectdetail')
+router.register(r"userdetailproject", UserprojectdetailViewset, basename='userprojectdetail')
 router.register(r"certificate", CertificateViewset, basename='certificate')
 
 
