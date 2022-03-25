@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.forms import TextInput, Textarea, CharField
 from django import forms
 from django.db import models
-from .models import Certificate, NewUser, Adminupload1, Adminupload2, Userdetail, Userprojectdetail
+from .models import Certificate, NewUser, Adminupload1, Adminupload2
 from django.contrib.auth.models import Group
 
 class UserAdminConfig(UserAdmin):
