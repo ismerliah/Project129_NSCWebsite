@@ -48,12 +48,11 @@ class NewUser(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return self.username
 
-class Member(models.Model):
-    user = models.OneToOneField(NewUser, on_delete=models.CASCADE)
+# class Member(models.Model):
+#     user = models.OneToOneField(NewUser, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.user.username
-
+#     def __str__(self):
+#         return self.user.username
 
 
 class Adminupload1(models.Model) :
@@ -97,8 +96,8 @@ class Adminupload2(models.Model) :
 #     member3 = models.CharField(max_length=200, null=True, blank=True)
 
 
-    def __str__(self) :
-        return self.project
+    # def __str__(self) :
+    #     return self.project
 
 
 class Certificate(models.Model) :
