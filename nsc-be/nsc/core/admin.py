@@ -38,7 +38,7 @@ admin.site.register(NewUser, UserAdminConfig)
 admin.site.register(Certificate)
 admin.site.register(Adminupload1)
 admin.site.register(Adminupload2)
-admin.site.rigister(Detail)
+admin.site.register(Detail)
 
 
 # admin.site.unregister(Group)
