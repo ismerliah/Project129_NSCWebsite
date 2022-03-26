@@ -138,7 +138,7 @@ const AdminMainBar = () => {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Typography variant="body2" align='center' sx={{ color:'#0000CC', fontSize: 20, fontFamily: 'Noto Sans Thai' }}>
+                  <Typography variant="body2" align='center' sx={{ color:'#0000CC', fontSize: 18, fontFamily: 'Noto Sans Thai' }}>
                       admin
                   </Typography>
                   &nbsp;

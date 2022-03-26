@@ -87,8 +87,8 @@ function Login() {
           navigate('/superhome');
           alert('Login Success!')
         }
-        console.log(formData)
-        console.log(res.data)
+        // console.log(formData)
+        // console.log(res.data)
         
         // console.log('is_member:', res.data.is_member)
         // console.log('is_staff:', res.data.is_staff)
